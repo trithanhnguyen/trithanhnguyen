@@ -1,0 +1,181 @@
+///////////////////////
+//  Hero             //
+///////////////////////
+
+.recipe-image {
+  background-image: url(../images/recipes/single-big.jpg);
+  background-size: cover;
+  height: 810px;
+}
+
+///////////////////////
+//  Title            //
+///////////////////////
+
+.title {
+  margin: 62px 0px 46px 0px;
+
+  &__heading {
+    background-color: deeppink;
+    width: 180px;
+    margin-bottom: 10px;
+
+    & > p {
+      color: white;
+      padding: 14px 20px 12px 20px;
+      font-size: 16px;
+    }
+  }
+
+  &__recipe > h1 {
+    font-size: 36px;
+    font-weight: 600;
+
+    color: #474747;
+  }
+
+  &__recipe > p {
+    font-size: 14px;
+    color: grey;
+  }
+
+  &__vote {
+    display: flex;
+    flex-flow: row;
+    margin-top: 30px;
+
+    & > li {
+      margin-right: 5px;
+
+      font-size: 14px;
+      color: lightgrey;
+    }
+
+    & > li.active {
+      color: yellow;
+    }
+  }
+}
+
+///////////////////////
+//  column 1         //
+///////////////////////
+
+.instruction {
+  background-color: whitesmoke;
+  &__prepare {
+    padding: 22px 50px;
+    width: 80%;
+    background-color: deeppink;
+
+    & > p {
+      font-size: 15px;
+      line-height: 2rem;
+
+      color: white;
+    }
+  }
+
+  &__ingredients--list {
+    padding: 55px 30px 55px 50px;
+
+    & > p {
+      margin-bottom: 35px;
+
+      font-size: 36px;
+      font-weight: 600;
+
+      color: #474747;
+    }
+  }
+}
+
+// style for checkbox
+.form-item {
+  position: relative;
+
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+
+  margin-bottom: 40px;
+
+  label {
+    display: inline-block;
+    padding-left: 50px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+
+      background: #fff;
+      border: 1px solid lightgrey;
+    }
+
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: 10px;
+
+      display: inline-block;
+      width: 6px;
+      height: 16px;
+
+      border-right: 1.5px solid black;
+      border-bottom: 1.5px solid black;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+// check state switcher
+input[type="checkbox"]:checked + label::before {
+  background-color: deeppink;
+}
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  border-color: white;
+}
+
+///////////////////////
+//     column 2      //
+///////////////////////
+
+.instruction__detail {
+  padding-left: 16px;
+}
+.instruction__detail--content {
+  display: flex;
+  flex-flow: row;
+
+  margin-bottom: 50px;
+
+  & > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #474747;
+  }
+
+  & > p {
+    padding: 18px 0px 0px 25px;
+    font-size: 14px;
+    line-height: 2rem;
+
+    color: grey;
+  }
+}

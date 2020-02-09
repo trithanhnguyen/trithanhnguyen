@@ -1,0 +1,170 @@
+.recipe-image {
+  background-image: url(../images/recipes/single-big.jpg);
+  background-size: cover;
+  height: 810px;
+}
+
+.title {
+  margin: 62px 0px 46px 0px;
+}
+
+.title__heading {
+  background-color: deeppink;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.title__heading > p {
+  color: white;
+  padding: 14px 20px 12px 20px;
+  font-size: 16px;
+}
+
+.title__recipe > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #474747;
+}
+
+.title__recipe > p {
+  font-size: 14px;
+  color: grey;
+}
+
+.title__vote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-top: 30px;
+}
+
+.title__vote > li {
+  margin-right: 5px;
+  font-size: 14px;
+  color: lightgrey;
+}
+
+.title__vote > li.active {
+  color: yellow;
+}
+
+.instruction {
+  background-color: whitesmoke;
+}
+
+.instruction__prepare {
+  padding: 22px 50px;
+  width: 80%;
+  background-color: deeppink;
+}
+
+.instruction__prepare > p {
+  font-size: 15px;
+  line-height: 2rem;
+  color: white;
+}
+
+.instruction__ingredients--list {
+  padding: 55px 30px 55px 50px;
+}
+
+.instruction__ingredients--list > p {
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #474747;
+}
+
+.form-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.form-item label {
+  display: inline-block;
+  padding-left: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-item label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border: 1px solid lightgrey;
+}
+
+.form-item label::after {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  display: inline-block;
+  width: 6px;
+  height: 16px;
+  border-right: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-item input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: deeppink;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  border-color: white;
+}
+
+.instruction__detail {
+  padding-left: 16px;
+}
+
+.instruction__detail--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-bottom: 50px;
+}
+
+.instruction__detail--content > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #474747;
+}
+
+.instruction__detail--content > p {
+  padding: 18px 0px 0px 25px;
+  font-size: 14px;
+  line-height: 2rem;
+  color: grey;
+}
+/*# sourceMappingURL=recipe_detail.css.map */

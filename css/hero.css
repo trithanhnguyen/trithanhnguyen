@@ -1,0 +1,89 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/slider-bg-2.jpg);
+  background-size: cover;
+  height: 700px;
+}
+
+.title {
+  display: block;
+}
+
+.title--one {
+  padding: 0px 25px;
+  border-radius: 6px;
+  z-index: 3;
+  font-weight: 700;
+  color: white;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  background-color: deeppink;
+}
+
+.title--two {
+  padding: 0px 25px;
+  border-radius: 6px;
+  z-index: 4;
+  font-weight: 700;
+  color: white;
+  background-color: #fdc856;
+}
+
+.title--three {
+  padding: 6px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: white;
+  background-color: #bdde64;
+}
+
+.margin__title {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .title--one {
+    text-align: center;
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  .title--two {
+    text-align: center;
+    font-size: 30px;
+  }
+  .title--three {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title--one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90px;
+    font-size: 72px;
+  }
+  .title--two {
+    font-size: 48px;
+  }
+  .title--three {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

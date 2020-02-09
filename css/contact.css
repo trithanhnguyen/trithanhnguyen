@@ -1,0 +1,125 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 240px;
+  background-image: url(../images/page-top-bg.jpg);
+  background-size: cover;
+}
+
+.hero__title {
+  display: inline-block;
+  padding: 5px 32px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 70px;
+  line-height: 5rem;
+  font-weight: bold;
+  color: white;
+  background-color: deeppink;
+  -webkit-box-shadow: 0px 90px 80px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 90px 80px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__title {
+    font-size: 46px;
+  }
+}
+
+.contact {
+  margin: 90px 0px;
+}
+
+.contact__comment > h2 {
+  margin-bottom: 75px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form__group > input {
+  padding: 16px;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  background-color: #eff3f7;
+}
+
+.form__group > textarea {
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  background-color: #eff3f7;
+}
+
+.form__group > button {
+  padding: 20px 5px;
+  width: 140px;
+  border: none;
+  color: white;
+  background-color: deeppink;
+  cursor: pointer;
+}
+
+.contact__section {
+  padding-top: 10px;
+}
+
+.contact__section > img {
+  margin-bottom: 40px;
+}
+
+.contact__info {
+  padding-left: 85px;
+}
+
+.contact__info > div {
+  margin-bottom: 25px;
+}
+
+.contact__info > div > h4 {
+  margin-bottom: 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  color: deeppink;
+  border-bottom: 1px solid deeppink;
+}
+
+.contact__info > div > p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #444;
+}
+
+.contact__info--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding-top: 20px;
+}
+
+.contact__info--icon > li {
+  margin-right: 25px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=contact.css.map */

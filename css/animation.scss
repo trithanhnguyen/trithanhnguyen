@@ -1,0 +1,24 @@
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+.zoom-in {
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+.delay-half {
+  animation-delay: 0.5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}

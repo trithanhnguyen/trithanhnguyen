@@ -1,0 +1,361 @@
+.recipies {
+  margin-top: 90px;
+}
+
+.title1 {
+  margin-bottom: 30px;
+}
+
+.title1::before {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 5px;
+  background-color: deeppink;
+}
+
+.title1 > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #444;
+}
+
+.recipe {
+  position: relative;
+}
+
+.recipe > img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.recipe__detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  padding: 12px 16px;
+  background-color: deeppink;
+}
+
+.recipe__name {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.recipe__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  list-style-type: none;
+}
+
+.recipe__rating > li {
+  margin-right: 4px;
+  color: lightgrey;
+}
+
+.recipe__rating > li.active {
+  color: yellow;
+}
+
+.recipe__rating > li > i {
+  font-size: 10px;
+}
+
+.recipies__choice {
+  margin-top: 90px;
+  padding: 70px 0px;
+  background-color: whitesmoke;
+}
+
+.recipies__choice--title {
+  margin-bottom: 48px;
+}
+
+.recipies__choice--title::before {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 5px;
+  background-color: deeppink;
+}
+
+.recipies__choice--title > h2 {
+  color: #444;
+  font-size: 30px;
+}
+
+.recipies__choice--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-bottom: 20px;
+}
+
+.recipies__choice--item > img {
+  width: 80px;
+  height: 80px;
+}
+
+.recipe__item--detail {
+  margin-left: 14px;
+}
+
+.recipe__item--detail > p.recipe__item--date {
+  font-size: 12px;
+  color: deeppink;
+}
+
+.recipe__item--detail > p.recipe__item--name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #474747;
+}
+
+.recipe__item--detail > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.recipe__item--detail > ul > li {
+  margin-right: 4px;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+.recipe__item--detail > ul > li.active {
+  color: yellow;
+}
+
+.review {
+  margin-top: 30px;
+  background-color: white;
+  -webkit-box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.review__image {
+  position: relative;
+}
+
+.review__image > img {
+  width: 100%;
+  height: auto;
+}
+
+.review__image > p.review__date {
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: white;
+  background-color: deeppink;
+}
+
+.review__detail {
+  position: relative;
+  padding: 48px 40px 45px 40px;
+}
+
+.review__detail > p.review__text1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #474747;
+}
+
+.review__detail > p.review__author {
+  margin-top: 8px;
+  color: deeppink;
+}
+
+.review__detail > p.review__text2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: grey;
+}
+
+.review__detail > a.review__comment {
+  font-size: small;
+}
+
+.review__detail > a.review__symbol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  background-color: deeppink;
+  color: white;
+  font-size: 40px;
+}
+
+.author {
+  padding: 65px 0px;
+  background-color: orange;
+}
+
+.author__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.author__review--image--recipe {
+  position: relative;
+  height: 160px;
+  width: 165px;
+}
+
+.author__review--image--recipe > img {
+  height: 160px;
+  width: 166px;
+}
+
+.author__review--image--recipe > p.author__image--date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 15px;
+  color: white;
+  background-color: deeppink;
+  font-size: 12px;
+}
+
+.author__review--detail {
+  margin-left: 30px;
+}
+
+.author__review--detail--date {
+  font-size: 12px;
+  color: deeppink;
+}
+
+.author__review--detail--tittle {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+.author__review--detail--rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-bottom: 10px;
+}
+
+.author__review--detail--rating > li {
+  margin-right: 4px;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+.author__review--detail--rating > li.active {
+  color: yellow;
+}
+
+.author__review--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__review--image > img {
+  margin-right: 16px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.author__review--image > p {
+  font-size: 14px;
+  color: grey;
+}
+
+@media only screen and (max-width: 576px) {
+  .author__review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0px 50px 0px;
+  }
+  .author__review--image--recipe {
+    margin-bottom: 30px;
+  }
+  .author__review--detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .author__review--image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+/*# sourceMappingURL=home.css.map */

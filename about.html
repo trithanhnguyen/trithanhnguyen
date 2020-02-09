@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fa626ebc7a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <script src="./main.js"></script>
+    <title>Food Blog</title>
+</head>
+
+<body>
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="top-bar__main">
+                    <div class="top-bar__icon-wrapper">
+                        <ul class="top-bar__icons-list">
+                            <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i> </a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i> </a></li>
+                            <li><a href=""><i class="fab fa-dribbble"></i> </a></li>
+                            <li><a href=""><i class="fab fa-behance"></i> </a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="top-bar__link-wrapper">
+                        <a href="">Register</a>
+                        <span>/</span>
+                        <a href="">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="top-nav">
+            <div class="container">
+                <div class="top-nav__main">
+                    <a href="" class="top-nav__logo-wrapper">
+                        <img src="./images/logo.svg" alt="logo-nordiccoder">
+                    </a>
+                    <div class="top-nav__menu-wrapper">
+                        <ul id="pageMenu" class="top-nav__menu">
+                            <li class="top-nav__menu--item">
+                                <a href="./home.html">Home</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./recipies_list.html">Receipies</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./recipe_detail.html">Recipe Detail</a>
+                            </li>
+                            <li class="top-nav__menu--item active">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav__search-wrapper">
+                        <div class="top-nav__search">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                        <div onclick="showMenu()" class="top-nav__menu-switch">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="zoom-in hero__title">About us</h1>
+        </section>
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="about__title">About your great team</h2>
+                        <p class="about__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
+                            Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis.
+                            Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius
+                            natoque penatibus et magni. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean
+                            congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget
+                            lobortis purus. Orci varius natoque penatibus et magni.
+                        </p>
+                        <a href="" class="about__read-more">Read more</a>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <img src="./images/about.jpg" alt="about" class="about__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fact">
+            <div class="fact-wrapper">
+                <div class="container">
+                    <ul class="row">
+                        <li class="col-12 col-lg-3 fact-item">
+                            <div>
+                                <img src="./images/icon/1.png" alt="icon1">
+                                <p class="fact__list-number">1287</p>
+                                <p class="fact__list-name">Amazing receipies</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-lg-3 fact-item">
+                            <div>
+                                <img src="./images/icon/2.png" alt="icon2">
+                                <p class="fact__list-number">25</p>
+                                <p class="fact__list-name">Wine pairings</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-lg-3 fact-item">
+                            <div>
+                                <img src="./images/icon/3.png" alt="icon3">
+                                <p class="fact__list-number">471</p>
+                                <p class="fact__list-name">Meat receipies</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-lg-3 fact-item">
+                            <div>
+                                <img src="./images/icon/4.png" alt="icon4">
+                                <p class="fact__list-number">326</p>
+                                <p class="fact__list-name">Desert receipies</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="app-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./images/logo.svg" alt="logo-nordiccoder" class="app-footer__logo">
+
+                    <ul class="app-footer__icon-list">
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href=""><i class="fab fa-behance"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="app-footer__menu-wrapper">
+                        <ul class="app-footer__menu">
+                            <li class="app-footer__menu--item">
+                                <a href="./home.html">Home</a>
+                            </li>
+                            <li class="app-footer__menu--item">
+                                <a href="./recipies_list.html">Receipies</a>
+                            </li>
+                            <li class="app-footer__menu--item">
+                                <a href="./recipe_detail.html">Recipe Detail</a>
+                            </li>
+                            <li class="app-footer__menu--item active">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="app-footer__menu--item app-footer__menu--lastitem">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <p class="app-footer__copyright">
+                            Copyright © 2019 All rights reserved | This template is made with <i
+                                class="far fa-heart"></i>
+                            by <a href="" style="color: blue;">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

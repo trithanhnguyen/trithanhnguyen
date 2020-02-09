@@ -1,0 +1,325 @@
+.recipies {
+  margin-top: 90px;
+}
+
+.title1 {
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 5px;
+
+    background-color: deeppink;
+  }
+
+  & > h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #444;
+  }
+}
+
+.recipe {
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  &__detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 70%;
+    padding: 12px 16px;
+
+    background-color: deeppink;
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+
+  &__rating {
+    display: flex;
+    flex-flow: row;
+
+    list-style-type: none;
+  }
+
+  &__rating > li {
+    margin-right: 4px;
+    color: lightgrey;
+  }
+  &__rating > li.active {
+    color: yellow;
+  }
+
+  &__rating > li > i {
+    font-size: 10px;
+  }
+}
+
+.recipies__choice {
+  margin-top: 90px;
+  padding: 70px 0px;
+
+  background-color: whitesmoke;
+}
+.recipies__choice--title {
+  margin-bottom: 48px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 5px;
+
+    background-color: deeppink;
+  }
+
+  & > h2 {
+    color: #444;
+    font-size: 30px;
+  }
+}
+.recipies__choice--item {
+  display: flex;
+  flex-flow: row;
+
+  margin-bottom: 20px;
+
+  & > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.recipe__item--detail {
+  margin-left: 14px;
+  & > p.recipe__item--date {
+    font-size: 12px;
+    color: deeppink;
+  }
+
+  & > p.recipe__item--name {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #474747;
+  }
+
+  & > ul {
+    display: flex;
+    flex-flow: row;
+
+    & > li {
+      margin-right: 4px;
+      font-size: 10px;
+      color: lightgrey;
+    }
+
+    & > li.active {
+      color: yellow;
+    }
+  }
+}
+
+.review {
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.review__image {
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+
+  & > p.review__date {
+    padding: 15px 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 14px;
+
+    color: white;
+    background-color: deeppink;
+  }
+}
+
+.review__detail {
+  position: relative;
+
+  padding: 48px 40px 45px 40px;
+
+  & > p.review__text1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #474747;
+  }
+
+  & > p.review__author {
+    margin-top: 8px;
+    color: deeppink;
+  }
+
+  & > p.review__text2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    line-height: 30px;
+    color: grey;
+  }
+
+  & > a.review__comment {
+    font-size: small;
+  }
+
+  & > a.review__symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    height: 40px;
+    width: 40px;
+
+    background-color: deeppink;
+    color: white;
+
+    font-size: 40px;
+  }
+}
+
+// Author Review
+.author {
+  padding: 65px 0px;
+  background-color: orange;
+}
+.author__review {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  background-color: white;
+}
+.author__review--image--recipe {
+  position: relative;
+  height: 160px;
+  width: 165px;
+
+  & > img {
+    height: 160px;
+    width: 166px;
+  }
+
+  & > p.author__image--date {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 8px 15px;
+
+    color: white;
+    background-color: deeppink;
+
+    font-size: 12px;
+  }
+}
+
+.author__review--detail {
+  margin-left: 30px;
+
+  &--date {
+    font-size: 12px;
+    color: deeppink;
+  }
+
+  &--tittle {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #444;
+  }
+
+  &--rating {
+    display: flex;
+    flex-flow: row;
+
+    margin-bottom: 10px;
+
+    & > li {
+      margin-right: 4px;
+
+      font-size: 10px;
+      color: lightgrey;
+    }
+
+    & > li.active {
+      color: yellow;
+    }
+  }
+}
+
+.author__review--image {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  & > img {
+    margin-right: 16px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  & > p {
+    font-size: 14px;
+    color: grey;
+  }
+}
+
+// responsive
+
+@media only screen and (max-width: 576px) {
+  .author__review {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    padding: 20px 0px 50px 0px;
+  }
+
+  .author__review--image--recipe {
+    margin-bottom: 30px;
+  }
+
+  .author__review--detail {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .author__review--image {
+    display: flex;
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fa626ebc7a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <script src="main.js"></script>
+    <title>Food Blog</title>
+</head>
+
+<body>
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="top-bar__main">
+                    <div class="top-bar__icon-wrapper">
+                        <ul class="top-bar__icons-list">
+                            <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i> </a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i> </a></li>
+                            <li><a href=""><i class="fab fa-dribbble"></i> </a></li>
+                            <li><a href=""><i class="fab fa-behance"></i> </a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="top-bar__link-wrapper">
+                        <a href="">Register</a>
+                        <span>/</span>
+                        <a href="">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="top-nav">
+            <div class="container">
+                <div class="top-nav__main">
+                    <a href="" class="top-nav__logo-wrapper">
+                        <img src="./images/logo.svg" alt="logo-nordiccoder">
+                    </a>
+                    <div class="top-nav__menu-wrapper">
+                        <ul id="pageMenu" class="top-nav__menu ">
+                            <li class="top-nav__menu--item active">
+                                <a href="./home.html">Home</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./recipies_list.html">Receipies</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./recipe_detail.html">Recipe Detail</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="top-nav__menu--item">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav__search-wrapper">
+                        <div class="top-nav__search">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                        <div onclick="showMenu()" class="top-nav__menu-switch">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Section hero -->
+        <section class="hero">
+            <h2 class="zoom-in margin__title">
+                <span class="title title--one">Healthy Recipies</span>
+            </h2>
+            <p class="zoom-in delay-half margin__title">
+                <span class="title title--two">from the best chefs</span>
+            </p>
+            <p class="zoom-in delay-1s margin__title">
+                <span class="title title--three">for all the foodies</span>
+            </p>
+        </section>
+
+        <section class="recipies">
+            <div class="container">
+                <!-- Title 1 -->
+                <div class="title1">
+                    <h2>Latest recipies</h2>
+                </div>
+
+                <!-- Recipies list -->
+                <ul class="row">
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/1.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Traditional pizza</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li>
+                                    <li class="active"><i class="fas fa-star"></i></li>
+                                    <li class="active"><i class="fas fa-star"></i></li>
+                                    <li class="active"><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/2.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Italian home-made pasta</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/3.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Cheese Cake Tart</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/4.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Traditional pizza</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/5.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Italian home-made pasta</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4">
+                        <div class="recipe">
+                            <img src="./images/recipes/6.jpg" alt="recipe1">
+
+                            <div class="recipe__detail">
+                                <p class="recipe__name"> Cheese Cake Tart</p>
+
+                                <ul class="recipe__rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Favorite recipies -->
+        <section class="recipies__choice">
+            <div class="container">
+                <div class="row">
+                    <!-- Top rate recipies -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Titile top rate -->
+                        <div class="recipies__choice--title">
+                            <h2>Top rated recipies</h2>
+                        </div>
+
+                        <ul class="recipies__choice--list">
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/1.jpg" alt="recipe top rated 1">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Italian pasta</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/2.jpg" alt="recipe top rated 2">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Frech Onion Soup</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/3.jpg" alt="recipe top rated 3">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Homemade pasta</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/4.jpg" alt="recipe top rated 4">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name">Onion Soup Gratinee</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/5.jpg" alt="recipe top rated 5">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Feta Cheese Burgers</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Most like recipies -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Titile most like -->
+                        <div class="recipies__choice--title">
+                            <h2>Most liked recipes</h2>
+                        </div>
+
+                        <ul class="recipies__choice--list">
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/6.jpg" alt="recipe most liked 1">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Traditional Food</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/7.jpg" alt="recipe most liked 2">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Baked Salmon</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/8.jpg" alt="recipe most liked 3">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Deep Fried Fish</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/9.jpg" alt="recipe most liked 4">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name">Raw Tomato Soup</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recipies__choice--item">
+                                    <img src="./images/thumb/10.jpg" alt="recipe most liked 5">
+
+                                    <div class="recipe__item--detail">
+                                        <p class="recipe__item--date">March 14,2018</p>
+                                        <p class="recipe__item--name"> Vegan Food</p>
+
+                                        <ul class="recipe__item--rating">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li class="active"><i class="fas fa-star"></i></li class="active">
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Restaurant review -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="review">
+                            <div class="review__image">
+                                <img src="./images/blog/1.jpg" alt=blog-image>
+                                <p class="review__date">May 04,2018</p>
+                            </div>
+                            <div class="review__detail">
+                                <p class="review__text1">Italian restaurant review</p>
+                                <p class="review__author">By Maria Williams</p>
+                                <p class="review__text2">Donec quam felis, ultricies nec, pellente sque eu, pretium
+                                    quis,sem. Nulla conseq uat massa quis enim.</p>
+                                <a href="" class="review__comment">2 Comments</a>
+                                <a href="" class="review__symbol"> &rsaquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- author review -->
+        <section class="author">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="author__review ">
+                            <div class="author__review--image--recipe">
+                                <img src="./images/thumb/11.jpg" alt="recipe 11">
+                                <p class="author__image--date">May 04,2018</p>
+                            </div>
+                            <div class="author__review--detail">
+                                <p class="author__review--detail--date">March 14,2018</p>
+                                <p class="author__review--detail--tittle">Feta Cheese Burgers</p>
+                                <ul class="author__review--detail--rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="author__review--image">
+                                    <img src="./images/author.jpg" alt="author">
+                                    <p>By Janice Smith</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="author__review">
+                            <div class="author__review--image--recipe">
+                                <img src="./images/thumb/12.jpg" alt="recipe 12">
+                                <p class="author__image--date">May 04,2018</p>
+                            </div>
+                            <div class="author__review--detail">
+                                <p class="author__review--detail--date">March 14,2018</p>
+                                <p class="author__review--detail--tittle">Mozzarella Pasta</p>
+                                <ul class="author__review--detail--rating">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li class="active"><i class="fas fa-star"></i></li class="active">
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="author__review--image">
+                                    <img src="./images/author.jpg" alt="author">
+                                    <p>By Janice Smith</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="app-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./images/logo.svg" alt="logo-nordiccoder" class="app-footer__logo">
+
+                    <ul class="app-footer__icon-list">
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href=""><i class="fab fa-behance"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="app-footer__menu-wrapper">
+                        <ul class="app-footer__menu">
+                            <li class="app-footer__menu--item active">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="app-footer__menu--item">
+                                <a href="./recipies_list.html">Receipies</a>
+                            </li>
+                            <li class="app-footer__menu--item">
+                                <a href="./recipe_detail.html">Recipe Detail</a>
+                            </li>
+                            <li class="app-footer__menu--item">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="app-footer__menu--item app-footer__menu--lastitem">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <p class="app-footer__copyright">
+                            Copyright © 2019 All rights reserved | This template is made with <i
+                                class="far fa-heart"></i>
+                            by <a href="" style="color: blue;">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

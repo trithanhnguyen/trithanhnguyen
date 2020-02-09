@@ -1,0 +1,90 @@
+.ingredients__main {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title__heading {
+  background-color: deeppink;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.title__heading > p {
+  color: white;
+  padding: 20px;
+  font-size: larger;
+}
+.title__recipe > h1 {
+  font-size: 40px;
+}
+.title__recipe > p {
+  color: gray;
+}
+.title__vote {
+  margin-top: 30px;
+}
+.title__vote > i {
+  color: yellow;
+}
+.instruction {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.instruction__ingredients-wrapper {
+  width: 40%;
+  background-color: lightgray;
+}
+.instruction__steps {
+  width: 55%;
+}
+.recipe-img {
+  width: 2000px;
+  height: 500px;
+}
+.recipe-image {
+  margin-bottom: 50px;
+}
+.instruction__ingredients-prepare {
+  background-color: deeppink;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.instruction__ingredients-prepare > p {
+  color: white;
+  margin: 10px;
+  font-size: large;
+}
+.instruction__ingredients-wrapper > p {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+.instruction__ingredients-wrapperlist {
+  padding-left: 50px;
+}
+.instruction__igredients-list > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.instruction__igredients-list > div > input {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.instruction__igredients-list > div > label {
+  font-size: 20px;
+}
+.instruction__steps > ol > li > p {
+  font-size: large;
+  color: grey;
+}
+.instruction__steps > ol > li {
+  margin-bottom: 50px;
+}
+.instruction__steps > ol > li > p {
+  line-height: 1.5;
+}

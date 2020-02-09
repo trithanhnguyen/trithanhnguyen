@@ -1,0 +1,46 @@
+[class*="col-"] {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 16px;
+}
+
+//extra small
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * #{$i});
+  }
+}
+
+// small
+@media only screen and (min-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+//medium:tablet
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+//largre:laptop
+@media only screen and (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+//extra large: desktop
+@media only screen and (min-width: 1140px) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
